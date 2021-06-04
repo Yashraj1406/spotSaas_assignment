@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import Header from './Header'
+import Products from './Products'
+// import SearchOutlinedIcon from '@material-ui/icons/SearchOutlined';
+// import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 
 function App() {
+
+  const update = () => {
+    // calling the forceUpdate() method
+    setTimeout((
+      this.forceUpdate()
+    ),1000);
+ }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header />
+      <div className="content">
+        <Products />
+      </div>
+      <div className="footer">
+
+      </div>
     </div>
   );
 }

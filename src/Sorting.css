@@ -1,0 +1,52 @@
+.dropdown-sort {
+    position: absolute;
+    right:60px;
+    z-index: 2;
+    margin-left:10px;
+    width: 207px;
+    height: 48px;
+    display: inline-block;
+}
+
+.dropdown-content-sort {
+    /* position: absolute;
+    z-index: 2; */
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content-sort a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropbtn-sort {
+    /* position: absolute;
+    z-index: 2; */
+    display:flex;
+    align-items: center;
+    width: 207px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #8661BB;
+    box-sizing: border-box;
+    border-radius: 7px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    color: #8661BB;
+}
+
+.dropbtn-sort > .MuiSvgIcon-root {
+    /* margin-right: -11vw; */
+    font-size: 24px !important;
+}
+
+.dropdown-sort:hover .dropdown-content-sort {
+    display: block;
+  }
